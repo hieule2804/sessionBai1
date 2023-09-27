@@ -38,6 +38,7 @@ public class HomeServlet extends HttpServlet {
          session.setAttribute("names", list);
          if(list.size() >5){
          session.removeAttribute("names");
+         //them o day ne
          }
          request.getRequestDispatcher("login.jsp").forward(request, response);
     }
